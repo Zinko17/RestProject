@@ -18,6 +18,7 @@ class Product(models.Model):
     price = models.FloatField(default=0.0)
     photo = models.ImageField(blank=True,null=True)
     category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    avg_score = models.FloatField(default=0.0)
 
 
     def __str__(self):
